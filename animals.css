@@ -1,0 +1,177 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.filters {
+    width: 10%;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	margin-top:20px;
+	background-color: #dcdcdc;
+	margin-bottom:35px;
+}
+
+.filters h2 {
+    display: block;
+    margin-bottom: 80px;
+    font-size: 30px;
+}
+
+.filters label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.filters select {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 20px;
+    padding: 2px;
+    width: 100%;
+}
+
+.filters button {
+    display: block;
+    margin-top: 80px;
+    font-size: 20px;
+    padding: 20px;
+	width:100%;
+}
+
+.animals {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust as needed */
+    grid-gap: 50px;
+    padding: 20px;
+}
+
+.animal {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 600px; /* Fixed height for all animals */
+	background-color: #f4f4f4;
+}
+
+.animal img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover; /* This property ensures the image covers the entire container */
+}
+
+.animal button{
+	font-size:20px;
+	border: 1px solid;
+	padding:20px;
+    border-radius: 10px;
+	background-color: #ffcba4;
+	margin-left:320px;
+	margin-top:-50px;
+	cursor:pointer;
+}
+
+.animal button:hover{
+	background-color: #a67b5b;
+}
+
+.animal h2{
+	font-size: 30px;
+}
+
+.animal p{
+	font-size: 20px;
+}
+
+.animal i{
+	font-size: 20px;
+}
+
+ /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: none;
+        }
+
+        /* Animal Popup */
+        .animal-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1001;
+            display: none;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .animal-popup img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .animal-popup h2 {
+            margin-top: 20px;
+            font-size: 34px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .animal-popup p {
+            margin-top: 5px;
+            font-size: 20px;
+            color: #666;
+        }
+		
+		.animal-popup hr{
+            max-width:800px;
+			border: 2px dashed;
+            color:grey;
+        }
+		
+		.desc{
+			padding:20px;
+		}
+		
+        .animal-popup button {
+            margin-top: 20px;
+            padding: 20px 20px;
+            font-size: 26px;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .animal-popup button:hover {
+            background-color: #45a049;
+        }
+
+        .animal-popup .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #888;
+            cursor: pointer;
+        }
+		
+		.end-card-container{
+			text-align: center;
+		}
+
